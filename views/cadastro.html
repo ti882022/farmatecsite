@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Link para o plugin de máscara JQuery -->
+ 			
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/ui-lightness/jquery-ui.css" /> 
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script> 
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+        <!---Fontawesome CDN Link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!----Custom CSS Filw Link--->
+        
+    <link rel="stylesheet" type="text/css" href="../css/styleCad.css">
+    <script type="text/javascript" src="../js/ValidaForm.js"></script>
+
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a class="aa" href="/farmatec/index.html">FarmaTec</a></label>
+        <ul>
+          <li><a class="active" href="/farmatec/index.html">Pagina Inicial</a></li>
+        </ul>
+      </nav>
+    
+      <div id="formulario"> 
+
+      <section class="container">
+
+      <form action="" method="" id="frmcontato">
+        <div class="container">
+            <br>
+          <h1>Registre-se</h1>
+          
+          <hr>
+      
+          <label for="nome"><b>Usuario :</b></label>
+          <input type="text" id="txtusuario" name="txtusuario"  placeholder="Nome de usuario">
+
+          <label for="nome"><b>Senha :</b></label>
+          <input type="password" id="txtsenha" name="txtsenha"  placeholder="Digite sua senha">
+
+          <label for="nome"><b>Nome :</b></label>
+          <input type="text" id="txtnomeCliente" name="txtnomeCliente" placeholder="Digite seu nome">
+    
+          <label for="txtendereco"><b>Endereco :</b></label>
+          <input type="text" id="txtendereco" name="txtendereco" placeholder="Informe o Seu Endereço">
+
+          <label for="txtcep"><b>Cep :</b></label>
+          <input type="text" id="txtcep" name="txtcep" maxlength="9" placeholder="Informe o Cep">
+
+          <label for="txtbairro"><b>Bairro :</b></label>
+          <input type="text" id="txtbairro" name="txtbairro" placeholder="Informe o Bairro">
+
+          <label for="txtcidade"><b>Cidade :</b></label>
+          <input type="text" id="txtcidade" name="txtcidade" placeholder="Informe a Cidade">
+
+          <label for="txtuf"><b>UF :</b></label>
+          <input class="u" type="text" id="txtuf" name="txtuf" maxlength="2" placeholder="UF">
+
+          <label for="txtcpf"><b>CPF :</b></label>
+          <input type="text" name="txtcpf" id="txtcpf" maxlength="14" placeholder="xxx.xxx.xxx-xx">
+      
+          <label for="txtemailCliente"><b>E-mail :</b></label>
+          <input type="email" id="txtemailCliente" name="txtemailCliente" maxlength="30" required placeholder="Email">
+
+          <label for="txtfoneCliente"><b>Telefone :</b></label>
+          <input class="telx" type="txtfoneCliente" id="txtfoneCliente" name="txtfoneCliente" maxlength="14" required placeholder="(xx) xxxxx-xxxx">
+
+          
+          <hr>
+      
+        
+         
+          
+          
+        </div>
+
+        <button type="button" id="btnEnviar" name="btnEnviar" class="registerbtn">Enviar</button>
+      
+        <div class="container signin">
+          <p>já tem uma conta? <a href="../login.php">Entrar</a>.</p>
+        </div>
+      </form>
+
+      <span id="Resultado" class="pop"></span>
+        <div id="dialog" title="Atenção">
+        <p id="Mensagem"></p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
