@@ -1,0 +1,31 @@
+#Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+#map neat URL to internal URL
+
+RewriteRule ^funcionarios/incluir/$ controllers/ControleFuncionarios.php?page_key=Incluir [QSA]
+RewriteRule ^funcionarios/listar/$ controllers/ControleFuncionarios.php?page_key=Consultar [QSA]
+RewriteRule ^fornecedores/incluir/$ controllers/Controlefornecedores.php?page_key=Incluir [QSA]
+RewriteRule ^fornecedores/listar/$ controllers/Controlefornecedores.php?page_key=Consultar [QSA]
+RewriteRule ^clientes/incluir/$ controllers/ControleClientes.php?page_key=Incluir [QSA]
+RewriteRule ^clientes/listar/$ controllers/ControleClientes.php?page_key=Consultar [QSA]
+RewriteRule ^usuarios/incluir/$ controllers/ControleUsuarios.php?page_key=Incluir [QSA]
+RewriteRule ^usuarios/listar/$ controllers/ControleUsuarios.php?page_key=Consultar [QSA]
+RewriteRule ^usuarios/conectar/$ controllers/ControleUsuarios.php?page_key=Validar [QSA]
+RewriteRule ^usuarios/desconectar/$ controllers/ControleUsuarios.php?page_key=Deslogar [QSA]
+RewriteRule ^usuarios/trocar/$ controllers/ControleUsuarios.php?page_key=Trocar [QSA]
+RewriteRule ^usuarios/atualizar/$ controllers/ControleUsuarios.php?page_key=Atualizar [QSA]
+RewriteRule ^produtos/incluir/$ controllers/ControleProdutos.php?page_key=Incluir [QSA]
+RewriteRule ^produtos/movimentar/$ controllers/ControleProdutos.php?page_key=Movimentar [QSA]
+RewriteRule ^produtos/atualizarp/$ controllers/ControleProdutos.php?page_key=Atualizar [QSA]
+RewriteRule ^produtos/listar/$ controllers/ControleProdutos.php?page_key=Consultar [QSA]
+RewriteRule ^produtos/listarcod/$ controllers/ControleProdutos.php?page_key=ConsultarCod [QSA]
+RewriteRule ^produtos/listarweb/$ controllers/ControleProdutos.php?page_key=ConsultarWeb [QSA]
+RewriteRule ^pedidos/incluir/$ controllers/ControlePedidos.php?page_key=Incluir [QSA]
+RewriteRule ^pedidos/listar/$ controllers/ControlePedidos.php?page_key=Consultar [QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ usuario/erro.html?url=$1 [NC,L]
+
