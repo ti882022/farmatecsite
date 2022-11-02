@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h1{
+text-align: center;
+
+}
+
+nav{
+background: #a4e1d8;
+height: 80px;
+width: 100%;
+}
+label.logo{
+
+font-size: 35px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+}
+nav ul{
+float: right;
+margin-right: 20px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+nav ul li a{
+color: #fff;
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+a.active,a:hover{
+background: #fff;
+transition: .5s;
+color: #a4e1d8;
+}
+.checkbtn{
+font-size: 30px;
+color: #fff;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+@media (max-width: 968px){
+label.logo{
+font-size: 30px;
+padding-left: 50px;
+}
+nav ul li a{
+font-size: 16px;
+}
+}
+@media (max-width: 875px){
+.checkbtn{
+display: block;
+}
+nav ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+background: silver;
+top: 80px;
+left: -100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 30px;
+}
+nav ul li a{
+font-size: 20px;
+}
+a:hover, a.active{
+background: none;
+color: red;
+}
+#check:checked ~ ul{
+left: 0;
+}
+}
+
+
+
+/* Add padding to containers */
+.container {
+padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email], input[type=txtfoneCliente] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block; 
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=txtfoneCliente]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+.registerbtn:hover {
+opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+color: white;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+background-color: #f1f1f1;
+text-align: center;
+}
+
+
